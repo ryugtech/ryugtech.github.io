@@ -1,1 +1,0 @@
-# ryugtech.github.io
