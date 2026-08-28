@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#FFD700" />
+  <meta name="description" content="plect games — small games, deep worlds." />
+  <title>plect games</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css?v=20260828" />
+</head>
+<body>
+  <main>
+    <section class="hero" id="top" aria-label="plect games intro">
+      <h1 class="hero__logo" aria-label="plect games">plect games</h1>
+      <a class="scroll-cue" href="#games" aria-label="게임 목록으로 이동">
+        <span>↓</span>
+      </a>
+    </section>
+
+    <section class="games section-dark" id="games">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>GAMES</h2>
+          <p class="section-copy">작게 시작해 오래 남는 2D 게임을 만듭니다.</p>
+        </div>
+
+        <div class="games-track" aria-label="게임 목록">
+          <article class="game-card reveal">
+            <div class="game-media">
+              <img class="game-image" src="assets/pocket-island.png" alt="곡괭이를 든 Pocket Island 모험가와 닭" />
+              <div class="media-label">POCKET ISLAND</div>
+            </div>
+            <div class="game-card__body">
+              <div class="game-card__meta">
+                <span>01</span>
+                <span>IN DEVELOPMENT</span>
+              </div>
+              <h3>POCKET ISLAND</h3>
+              <p class="game-description">작은 섬에서 농사, 낚시, 채집과 탐험을 즐기는 2D 라이프 게임.</p>
+              <ul class="tags" aria-label="게임 태그">
+                <li>2D</li>
+                <li>FARMING</li>
+                <li>COZY</li>
+              </ul>
+              <div class="game-actions">
+                <a class="btn btn--yellow" href="https://play.google.com/store/apps/details?id=com.plectgames.pocketisland&amp;pcampaignid=web_share" target="_blank" rel="noopener">GOOGLE PLAY ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card game-card--development reveal" aria-label="개발 중인 게임">
+            <div class="development-card">
+              <span class="development-card__number">02</span>
+              <p class="development-card__label">IN DEVELOPMENT</p>
+              <h3>개발중</h3>
+              <p class="development-card__copy">새로운 게임을 준비하고 있습니다.</p>
+            </div>
+          </article>
+
+          <article class="game-card game-card--development reveal" aria-label="개발 중인 게임">
+            <div class="development-card">
+              <span class="development-card__number">03</span>
+              <p class="development-card__label">IN DEVELOPMENT</p>
+              <h3>개발중</h3>
+              <p class="development-card__copy">새로운 게임을 준비하고 있습니다.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="swipe-hint">← DRAG / SWIPE →</p>
+      </div>
+    </section>
+
+    <section class="info" id="info">
+      <div class="section-shell info-grid">
+        <div class="info-block reveal">
+          <p class="eyebrow">ABOUT</p>
+          <h2>PLAY<br />TO<br />CONNECT</h2>
+          <p class="info-copy">plect games는 소소하지만 오래 즐길 수 있는 게임을 만드는 인디 게임 스튜디오입니다.</p>
+        </div>
+
+        <div class="contact-block reveal">
+          <p class="eyebrow">CONTACT</p>
+          <a class="contact-mail" href="mailto:plectgames@gmail.com">plectgames@gmail.com ↗</a>
+          <p class="contact-note">Publishing · Media · Bug report</p>
+
+          <nav class="socials" aria-label="사이트 링크">
+            <a class="social-link" href="privacy.html">PRIVACY POLICY</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> PLECT GAMES</span>
+    <nav class="footer-links" aria-label="푸터 링크">
+      <a href="privacy.html">PRIVACY POLICY</a>
+      <a href="#top">BACK TO TOP ↑</a>
+    </nav>
+  </footer>
+
+  <script src="script.js?v=20260828"></script>
+</body>
+</html>
