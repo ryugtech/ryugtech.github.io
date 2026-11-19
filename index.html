@@ -1,107 +1,97 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#FFD700" />
-  <meta name="description" content="plect games — small games, deep worlds." />
-  <title>plect games</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css?v=20260828" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141610">
+  <meta name="description" content="작지만 오래 기억에 남는 2D 게임을 만드는 인디 게임 스튜디오, Plect Games.">
+  <title>Plect Games — Indie Game Studio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=20261119">
+  <script src="script.js?v=20261119" defer></script>
 </head>
-<body>
-  <main>
-    <section class="hero" id="top" aria-label="plect games intro">
-      <h1 class="hero__logo" aria-label="plect games">plect games</h1>
-      <a class="scroll-cue" href="#games" aria-label="게임 목록으로 이동">
-        <span>↓</span>
+<body id="top">
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="Plect Games 홈">
+        <img class="brand-mark" src="assets/favicon.svg" width="30" height="30" alt="">
+        plect games
       </a>
-    </section>
+      <nav class="site-nav" aria-label="주 메뉴">
+        <a href="#games">게임</a>
+        <a href="#studio">스튜디오</a>
+        <a class="nav-contact" href="#contact">문의 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="games section-dark" id="games">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">SELECTED WORK</p>
-          <h2>GAMES</h2>
-          <p class="section-copy">작게 시작해 오래 남는 2D 게임을 만듭니다.</p>
-        </div>
-
-        <div class="games-track" aria-label="게임 목록">
-          <article class="game-card reveal">
-            <div class="game-media">
-              <img class="game-image" src="assets/pocket-island.png" alt="곡괭이를 든 Pocket Island 모험가와 닭" />
-              <div class="media-label">POCKET ISLAND</div>
-            </div>
-            <div class="game-card__body">
-              <div class="game-card__meta">
-                <span>01</span>
-                <span>IN DEVELOPMENT</span>
-              </div>
-              <h3>POCKET ISLAND</h3>
-              <p class="game-description">작은 섬에서 농사, 낚시, 채집과 탐험을 즐기는 2D 라이프 게임.</p>
-              <ul class="tags" aria-label="게임 태그">
-                <li>2D</li>
-                <li>FARMING</li>
-                <li>COZY</li>
-              </ul>
-              <div class="game-actions">
-                <a class="btn btn--yellow" href="https://play.google.com/store/apps/details?id=com.plectgames.pocketisland&amp;pcampaignid=web_share" target="_blank" rel="noopener">GOOGLE PLAY ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="game-card game-card--development reveal" aria-label="개발 중인 게임">
-            <div class="development-card">
-              <span class="development-card__number">02</span>
-              <p class="development-card__label">IN DEVELOPMENT</p>
-              <h3>개발중</h3>
-              <p class="development-card__copy">새로운 게임을 준비하고 있습니다.</p>
-            </div>
-          </article>
-
-          <article class="game-card game-card--development reveal" aria-label="개발 중인 게임">
-            <div class="development-card">
-              <span class="development-card__number">03</span>
-              <p class="development-card__label">IN DEVELOPMENT</p>
-              <h3>개발중</h3>
-              <p class="development-card__copy">새로운 게임을 준비하고 있습니다.</p>
-            </div>
-          </article>
-        </div>
-
-        <p class="swipe-hint">← DRAG / SWIPE →</p>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span> INDIE GAME STUDIO</p>
+      <h1 id="hero-title" lang="en">Small games.<br><em>Deep worlds.</em></h1>
+      <div class="hero-mark" aria-hidden="true"><span>✦</span></div>
+      <div class="hero-footer">
+        <p>작지만 오래 기억에 남는<br class="mobile-break"> 2D 게임을 만듭니다.</p>
+        <a class="text-link" href="#games">게임 둘러보기 <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
-    <section class="info" id="info">
-      <div class="section-shell info-grid">
-        <div class="info-block reveal">
-          <p class="eyebrow">ABOUT</p>
-          <h2>PLAY<br />TO<br />CONNECT</h2>
-          <p class="info-copy">plect games는 소소하지만 오래 즐길 수 있는 게임을 만드는 인디 게임 스튜디오입니다.</p>
+    <section class="games shell" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <h2 id="games-title">게임</h2>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <article class="game-card">
+        <div class="game-content">
+          <div class="game-meta">
+            <img src="assets/pocket-island.png" width="40" height="40" alt="">
+            <ul class="tags" aria-label="게임 장르">
+              <li>농장</li>
+              <li>생활 시뮬레이션</li>
+            </ul>
+          </div>
+          <h3 lang="en">Pocket<br class="desktop-break"> Island</h3>
+          <p>작은 섬에서 농사를 짓고, 낚시와 채집을 즐겨 보세요. 섬을 탐험하며 나만의 마을을 만들어 보세요.</p>
+          <a class="button" href="https://play.google.com/store/apps/details?id=com.plectgames.pocketisland">
+            Google Play <span aria-hidden="true">↗</span>
+          </a>
         </div>
+        <figure class="game-art">
+          <img src="assets/pocket-island-landscape.webp" alt="농장과 작은 집, 나무 부두가 있는 픽셀 아트 섬">
+          <figcaption>콘셉트 아트</figcaption>
+        </figure>
+      </article>
+    </section>
 
-        <div class="contact-block reveal">
-          <p class="eyebrow">CONTACT</p>
-          <a class="contact-mail" href="mailto:plectgames@gmail.com">plectgames@gmail.com ↗</a>
-          <p class="contact-note">Publishing · Media · Bug report</p>
-
-          <nav class="socials" aria-label="사이트 링크">
-            <a class="social-link" href="privacy.html">PRIVACY POLICY</a>
-          </nav>
+    <section class="studio shell" id="studio" aria-labelledby="studio-title">
+      <div class="section-heading">
+        <h2 id="studio-title">스튜디오</h2>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+      <div class="studio-grid">
+        <div>
+          <h3>작은 세계에서<br>오래 즐길 수 있도록.</h3>
+          <p>Plect Games는 플레이어가 자기만의 속도로 탐험하고 즐길 수 있는 2D 게임을 만드는 인디 게임 스튜디오입니다.</p>
+          <p class="studio-status"><span class="dot" aria-hidden="true"></span> 다음 게임을 개발 중입니다.</p>
+        </div>
+        <div class="contact" id="contact">
+          <h3>문의</h3>
+          <p>퍼블리싱, 미디어 문의, 버그 제보</p>
+          <a class="text-link" href="mailto:plectgames@gmail.com">plectgames@gmail.com <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <span>© <span id="year"></span> PLECT GAMES</span>
-    <nav class="footer-links" aria-label="푸터 링크">
-      <a href="privacy.html">PRIVACY POLICY</a>
-      <a href="#top">BACK TO TOP ↑</a>
-    </nav>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span id="year">2026</span> Plect Games</p>
+      <nav class="footer-links" aria-label="푸터 메뉴">
+        <a href="privacy.html">개인정보 처리방침</a>
+        <a href="#top">맨 위로 <span aria-hidden="true">↑</span></a>
+      </nav>
+    </div>
   </footer>
-
-  <script src="script.js?v=20260828"></script>
 </body>
 </html>
